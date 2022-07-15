@@ -39,8 +39,8 @@ ol {
 }
 
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	/* padding-top: 94px;
+	padding-bottom: 94px; */
 }
 /* ======================== COMPONENTS ======================= */
 body {
@@ -70,11 +70,15 @@ body {
 }
 
 /* ======================== HEADER ======================== */
-.main-header {
+
+.header {
 	background-color: var(--headbg-color);
 }
 
 .logo-link {
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 93px;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -82,10 +86,11 @@ body {
 	letter-spacing: 0.03em;
 	color: var(--logo-color);
 }
+
 .accent-logo {
 	color: var(--accent-color);
 }
-.menu-link {
+.nav-link {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -93,24 +98,68 @@ body {
 	color: var(--another-color);
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.nav-link:hover,
+.nav-link:focus {
 	color: var(--accent-color);
 }
 
-.menu-link.current {
+.nav-link.current {
 	color: var(--accent-color);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	margin-right: ;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+/* .nav-list .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+} */
+
+.contact-list {
+	display: flex;
+	margin-left: auto;
+}
+
+/* .contact-item {
+	margin-left: auto;
+} */
+
+.header-container {
+	display: flex;
+	align-items: center;
+}
+.contact-list .contact-item + .contact-item {
+	margin-left: 50px;
 }
 
 /* ======================== HERO ======================== */
 .section-hero {
 	background-color: var(--hero-footer-background);
+	text-align: center;
 }
+
 .main-title {
+	margin-bottom: 30px;
+}
+
+.main-title {
+	padding-top: 200px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	text-align: center;
+
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--headbg-color);
@@ -123,6 +172,11 @@ body {
 }
 
 .service-button {
+	padding-top: 10px;
+	padding-right: 32px;
+	padding-bottom: 10px;
+	padding-left: 32px;
+	/* margin-bottom: 200px; */
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
@@ -130,6 +184,7 @@ body {
 	letter-spacing: 0.03em;
 	border: none;
 	cursor: pointer;
+	border-radius: 4px;
 }
 
 /* ======================== Attention to detail ======================== */
