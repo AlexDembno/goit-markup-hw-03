@@ -207,7 +207,6 @@ body {
 
 .detail-list {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .detail-item:not(:nth-child(4n)) {
@@ -222,9 +221,8 @@ body {
 	margin-bottom: 10px;
 }
 
-.text-detail {
+.detail-item {
 	width: 270px;
-	height: 75px;
 }
 
 .title-hidden {
@@ -254,7 +252,9 @@ body {
 }
 
 /* ======================== What are we doing ======================== */
-
+.section-doing {
+	padding-top: 0px;
+}
 .doing-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -368,6 +368,9 @@ body {
 	margin-right: 8px;
 }
 
+.filter-item {
+	border-radius: 4px;
+}
 .section-button,
 .item-portfolio {
 	background-color: var(--headbg-color);
